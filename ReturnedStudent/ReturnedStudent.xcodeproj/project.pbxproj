@@ -25,6 +25,13 @@
 		20126BE21DF6DD1E00F5ED74 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE11DF6DD1E00F5ED74 /* MyViewController.swift */; };
 		20126BE41DF6DD2C00F5ED74 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE31DF6DD2C00F5ED74 /* ScheduleViewController.swift */; };
 		20126BE61DF6DD3A00F5ED74 /* WalkStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE51DF6DD3A00F5ED74 /* WalkStreetViewController.swift */; };
+		20CA63021DFA4FA4002FA30E /* NoticeboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */; };
+		20E950721DF9355C004576BD /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950711DF9355C004576BD /* NoticeboardViewController.swift */; };
+		20E950741DF93586004576BD /* RadioStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950731DF93586004576BD /* RadioStationViewController.swift */; };
+		20E950761DF9359B004576BD /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950751DF9359B004576BD /* CanteenViewController.swift */; };
+		20E9507F1DF96553004576BD /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E9507E1DF96553004576BD /* String_Extension.swift */; };
+		20E950811DF96813004576BD /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950801DF96813004576BD /* UILabel_Extension.swift */; };
+		F288C968D0A756739D1F0CD0 /* Pods_ReturnedStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F17A0481243E49D53FC4B3D /* Pods_ReturnedStudent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,15 @@
 		20126BE11DF6DD1E00F5ED74 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		20126BE31DF6DD2C00F5ED74 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		20126BE51DF6DD3A00F5ED74 /* WalkStreetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkStreetViewController.swift; sourceTree = "<group>"; };
+		20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardTableViewCell.swift; sourceTree = "<group>"; };
+		20E950711DF9355C004576BD /* NoticeboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
+		20E950731DF93586004576BD /* RadioStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationViewController.swift; sourceTree = "<group>"; };
+		20E950751DF9359B004576BD /* CanteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
+		20E9507E1DF96553004576BD /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		20E950801DF96813004576BD /* UILabel_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
+		22102F9DB227730E75E1956F /* Pods-ReturnedStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReturnedStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReturnedStudent/Pods-ReturnedStudent.debug.xcconfig"; sourceTree = "<group>"; };
+		7F17A0481243E49D53FC4B3D /* Pods_ReturnedStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReturnedStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDD8F8654F247379C91BF9B /* Pods-ReturnedStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReturnedStudent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReturnedStudent/Pods-ReturnedStudent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F288C968D0A756739D1F0CD0 /* Pods_ReturnedStudent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +119,8 @@
 				20126BA01DF6D01B00F5ED74 /* ReturnedStudentTests */,
 				20126BAB1DF6D01B00F5ED74 /* ReturnedStudentUITests */,
 				20126B8A1DF6D01B00F5ED74 /* Products */,
+				36C19C1D4EEF4B283105A4E2 /* Pods */,
+				4910F55075AE77C0F38901DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +189,10 @@
 			isa = PBXGroup;
 			children = (
 				20126BDD1DF6DD0500F5ED74 /* InSchoolViewController.swift */,
+				20E950711DF9355C004576BD /* NoticeboardViewController.swift */,
+				20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */,
+				20E950731DF93586004576BD /* RadioStationViewController.swift */,
+				20E950751DF9359B004576BD /* CanteenViewController.swift */,
 			);
 			path = "InSchool(校内)";
 			sourceTree = "<group>";
@@ -218,6 +241,8 @@
 		20126BC21DF6D28400F5ED74 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				20E9507E1DF96553004576BD /* String_Extension.swift */,
+				20E950801DF96813004576BD /* UILabel_Extension.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -244,6 +269,23 @@
 			path = TabAndNav;
 			sourceTree = "<group>";
 		};
+		36C19C1D4EEF4B283105A4E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22102F9DB227730E75E1956F /* Pods-ReturnedStudent.debug.xcconfig */,
+				EDDD8F8654F247379C91BF9B /* Pods-ReturnedStudent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4910F55075AE77C0F38901DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F17A0481243E49D53FC4B3D /* Pods_ReturnedStudent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20126BB11DF6D01B00F5ED74 /* Build configuration list for PBXNativeTarget "ReturnedStudent" */;
 			buildPhases = (
+				892314AEC6A76BD42572C124 /* [CP] Check Pods Manifest.lock */,
 				20126B851DF6D01B00F5ED74 /* Sources */,
 				20126B861DF6D01B00F5ED74 /* Frameworks */,
 				20126B871DF6D01B00F5ED74 /* Resources */,
+				FF5DFA61495FA13EDE52C93D /* [CP] Embed Pods Frameworks */,
+				20919ED8A15221671BDA0006 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +357,7 @@
 				TargetAttributes = {
 					20126B881DF6D01B00F5ED74 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					20126B9C1DF6D01B00F5ED74 = {
@@ -374,18 +420,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20919ED8A15221671BDA0006 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReturnedStudent/Pods-ReturnedStudent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		892314AEC6A76BD42572C124 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5DFA61495FA13EDE52C93D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReturnedStudent/Pods-ReturnedStudent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20126B851DF6D01B00F5ED74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E950741DF93586004576BD /* RadioStationViewController.swift in Sources */,
 				20126BDC1DF6DB9200F5ED74 /* MainNavigationViewController.swift in Sources */,
+				20CA63021DFA4FA4002FA30E /* NoticeboardTableViewCell.swift in Sources */,
 				20126BD31DF6D2CB00F5ED74 /* LoginViewController.swift in Sources */,
 				20126BD11DF6D28400F5ED74 /* ViewController.swift in Sources */,
+				20E9507F1DF96553004576BD /* String_Extension.swift in Sources */,
 				20126BCC1DF6D28400F5ED74 /* AppDelegate.swift in Sources */,
 				20126BE01DF6DD1300F5ED74 /* ComplaintsViewController.swift in Sources */,
 				20126BDA1DF6DB7D00F5ED74 /* MainTabBarViewController.swift in Sources */,
+				20E950811DF96813004576BD /* UILabel_Extension.swift in Sources */,
+				20E950761DF9359B004576BD /* CanteenViewController.swift in Sources */,
 				20126BDE1DF6DD0500F5ED74 /* InSchoolViewController.swift in Sources */,
+				20E950721DF9355C004576BD /* NoticeboardViewController.swift in Sources */,
 				20126BD71DF6D42C00F5ED74 /* Global.swift in Sources */,
 				20126BE21DF6DD1E00F5ED74 /* MyViewController.swift in Sources */,
 				20126BE41DF6DD2C00F5ED74 /* ScheduleViewController.swift in Sources */,
@@ -540,24 +640,31 @@
 		};
 		20126BB21DF6D01B00F5ED74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22102F9DB227730E75E1956F /* Pods-ReturnedStudent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ReturnedStudent/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.ReturnedStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		20126BB31DF6D01B00F5ED74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDD8F8654F247379C91BF9B /* Pods-ReturnedStudent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ReturnedStudent/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.ReturnedStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -635,6 +742,7 @@
 				20126BB31DF6D01B00F5ED74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20126BB41DF6D01B00F5ED74 /* Build configuration list for PBXNativeTarget "ReturnedStudentTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +751,7 @@
 				20126BB61DF6D01B00F5ED74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20126BB71DF6D01B00F5ED74 /* Build configuration list for PBXNativeTarget "ReturnedStudentUITests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +760,7 @@
 				20126BB91DF6D01B00F5ED74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

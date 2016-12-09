@@ -5,13 +5,7 @@
 
 target 'ReturnedStudent' do
 
-end
-
-target 'ReturnedStudentTests' do
-
-end
-
-target 'ReturnedStudentUITests' do
+pod 'SnapKit', '~> 3.0.2'
 
 end
    
