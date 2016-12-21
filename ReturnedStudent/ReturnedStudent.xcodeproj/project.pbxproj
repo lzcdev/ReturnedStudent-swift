@@ -20,15 +20,22 @@
 		20126BD71DF6D42C00F5ED74 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BD61DF6D42C00F5ED74 /* Global.swift */; };
 		20126BDA1DF6DB7D00F5ED74 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BD91DF6DB7D00F5ED74 /* MainTabBarViewController.swift */; };
 		20126BDC1DF6DB9200F5ED74 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BDB1DF6DB9200F5ED74 /* MainNavigationViewController.swift */; };
-		20126BDE1DF6DD0500F5ED74 /* InSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BDD1DF6DD0500F5ED74 /* InSchoolViewController.swift */; };
 		20126BE01DF6DD1300F5ED74 /* ComplaintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BDF1DF6DD1300F5ED74 /* ComplaintsViewController.swift */; };
 		20126BE21DF6DD1E00F5ED74 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE11DF6DD1E00F5ED74 /* MyViewController.swift */; };
 		20126BE41DF6DD2C00F5ED74 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE31DF6DD2C00F5ED74 /* ScheduleViewController.swift */; };
 		20126BE61DF6DD3A00F5ED74 /* WalkStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20126BE51DF6DD3A00F5ED74 /* WalkStreetViewController.swift */; };
-		20CA63021DFA4FA4002FA30E /* NoticeboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */; };
-		20E950721DF9355C004576BD /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950711DF9355C004576BD /* NoticeboardViewController.swift */; };
-		20E950741DF93586004576BD /* RadioStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950731DF93586004576BD /* RadioStationViewController.swift */; };
-		20E950761DF9359B004576BD /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950751DF9359B004576BD /* CanteenViewController.swift */; };
+		202138FE1E03DC8B00DBDF26 /* CanteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138F81E03DC8B00DBDF26 /* CanteenViewController.swift */; };
+		202138FF1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FA1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift */; };
+		202139001E03DC8B00DBDF26 /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FB1E03DC8B00DBDF26 /* NoticeboardViewController.swift */; };
+		202139011E03DC8B00DBDF26 /* RadioStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FD1E03DC8B00DBDF26 /* RadioStationViewController.swift */; };
+		2077D5861E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5841E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift */; };
+		2077D5871E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2077D5851E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib */; };
+		2077D5CB1E0A34AB00BCE9E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5C91E0A34AB00BCE9E1 /* TableViewCell.swift */; };
+		2077D5CC1E0A34AB00BCE9E1 /* FriendCircleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5CA1E0A34AB00BCE9E1 /* FriendCircleModel.swift */; };
+		2077D5CE1E0A577F00BCE9E1 /* PhotoCantainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5CD1E0A577F00BCE9E1 /* PhotoCantainerView.swift */; };
+		2077D5D51E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5D21E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		2077D5D61E0A614800BCE9E1 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5D41E0A614800BCE9E1 /* UIView+SDAutoLayout.m */; };
+		20CAE3641E0A165200E0BB42 /* InSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE3631E0A165200E0BB42 /* InSchoolViewController.swift */; };
 		20E9507F1DF96553004576BD /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E9507E1DF96553004576BD /* String_Extension.swift */; };
 		20E950811DF96813004576BD /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E950801DF96813004576BD /* UILabel_Extension.swift */; };
 		F288C968D0A756739D1F0CD0 /* Pods_ReturnedStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F17A0481243E49D53FC4B3D /* Pods_ReturnedStudent.framework */; };
@@ -70,15 +77,26 @@
 		20126BD61DF6D42C00F5ED74 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		20126BD91DF6DB7D00F5ED74 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		20126BDB1DF6DB9200F5ED74 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
-		20126BDD1DF6DD0500F5ED74 /* InSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InSchoolViewController.swift; sourceTree = "<group>"; };
 		20126BDF1DF6DD1300F5ED74 /* ComplaintsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplaintsViewController.swift; sourceTree = "<group>"; };
 		20126BE11DF6DD1E00F5ED74 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		20126BE31DF6DD2C00F5ED74 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		20126BE51DF6DD3A00F5ED74 /* WalkStreetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkStreetViewController.swift; sourceTree = "<group>"; };
-		20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardTableViewCell.swift; sourceTree = "<group>"; };
-		20E950711DF9355C004576BD /* NoticeboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
-		20E950731DF93586004576BD /* RadioStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationViewController.swift; sourceTree = "<group>"; };
-		20E950751DF9359B004576BD /* CanteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
+		202138F81E03DC8B00DBDF26 /* CanteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanteenViewController.swift; sourceTree = "<group>"; };
+		202138FA1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardTableViewCell.swift; sourceTree = "<group>"; };
+		202138FB1E03DC8B00DBDF26 /* NoticeboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
+		202138FD1E03DC8B00DBDF26 /* RadioStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationViewController.swift; sourceTree = "<group>"; };
+		2077D5841E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeHoleTableViewCell.swift; sourceTree = "<group>"; };
+		2077D5851E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeHoleTableViewCell.xib; sourceTree = "<group>"; };
+		2077D5881E0A273900BCE9E1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		2077D5C91E0A34AB00BCE9E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2077D5CA1E0A34AB00BCE9E1 /* FriendCircleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCircleModel.swift; sourceTree = "<group>"; };
+		2077D5CD1E0A577F00BCE9E1 /* PhotoCantainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCantainerView.swift; sourceTree = "<group>"; };
+		2077D5D01E0A614800BCE9E1 /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		2077D5D11E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		2077D5D21E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		2077D5D31E0A614800BCE9E1 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		2077D5D41E0A614800BCE9E1 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		20CAE3631E0A165200E0BB42 /* InSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InSchoolViewController.swift; sourceTree = "<group>"; };
 		20E9507E1DF96553004576BD /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		20E950801DF96813004576BD /* UILabel_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
 		22102F9DB227730E75E1956F /* Pods-ReturnedStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReturnedStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReturnedStudent/Pods-ReturnedStudent.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,9 +184,9 @@
 		20126BBA1DF6D28400F5ED74 /* Classess */ = {
 			isa = PBXGroup;
 			children = (
+				202138F61E03DC8B00DBDF26 /* InSchool(校内) */,
 				20126BD81DF6DB4C00F5ED74 /* TabAndNav */,
 				20126BBB1DF6D28400F5ED74 /* Complaints(大嘈场) */,
-				20126BBC1DF6D28400F5ED74 /* InSchool(校内) */,
 				20126BBD1DF6D28400F5ED74 /* LoginAndRegister */,
 				20126BBE1DF6D28400F5ED74 /* My(我的) */,
 				20126BBF1DF6D28400F5ED74 /* Schedule(课程表) */,
@@ -183,18 +201,6 @@
 				20126BDF1DF6DD1300F5ED74 /* ComplaintsViewController.swift */,
 			);
 			path = "Complaints(大嘈场)";
-			sourceTree = "<group>";
-		};
-		20126BBC1DF6D28400F5ED74 /* InSchool(校内) */ = {
-			isa = PBXGroup;
-			children = (
-				20126BDD1DF6DD0500F5ED74 /* InSchoolViewController.swift */,
-				20E950711DF9355C004576BD /* NoticeboardViewController.swift */,
-				20CA63011DFA4FA4002FA30E /* NoticeboardTableViewCell.swift */,
-				20E950731DF93586004576BD /* RadioStationViewController.swift */,
-				20E950751DF9359B004576BD /* CanteenViewController.swift */,
-			);
-			path = "InSchool(校内)";
 			sourceTree = "<group>";
 		};
 		20126BBD1DF6D28400F5ED74 /* LoginAndRegister */ = {
@@ -241,6 +247,7 @@
 		20126BC21DF6D28400F5ED74 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				2077D5CF1E0A614800BCE9E1 /* SDAutoLayout */,
 				20E9507E1DF96553004576BD /* String_Extension.swift */,
 				20E950801DF96813004576BD /* UILabel_Extension.swift */,
 			);
@@ -256,6 +263,7 @@
 				20126BC81DF6D28400F5ED74 /* Main.storyboard */,
 				20126BCA1DF6D28400F5ED74 /* Info.plist */,
 				20126BCB1DF6D28400F5ED74 /* ViewController.swift */,
+				2077D5881E0A273900BCE9E1 /* Header.h */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -267,6 +275,61 @@
 				20126BDB1DF6DB9200F5ED74 /* MainNavigationViewController.swift */,
 			);
 			path = TabAndNav;
+			sourceTree = "<group>";
+		};
+		202138F61E03DC8B00DBDF26 /* InSchool(校内) */ = {
+			isa = PBXGroup;
+			children = (
+				20CAE3631E0A165200E0BB42 /* InSchoolViewController.swift */,
+				202138F91E03DC8B00DBDF26 /* SchoolMessage( 校内资讯) */,
+				202138F71E03DC8B00DBDF26 /* FleaMarket( 小卖部) */,
+				202138FC1E03DC8B00DBDF26 /* TreeHole(广播站) */,
+			);
+			path = "InSchool(校内)";
+			sourceTree = "<group>";
+		};
+		202138F71E03DC8B00DBDF26 /* FleaMarket( 小卖部) */ = {
+			isa = PBXGroup;
+			children = (
+				202138F81E03DC8B00DBDF26 /* CanteenViewController.swift */,
+				2077D5C91E0A34AB00BCE9E1 /* TableViewCell.swift */,
+				2077D5CA1E0A34AB00BCE9E1 /* FriendCircleModel.swift */,
+				2077D5CD1E0A577F00BCE9E1 /* PhotoCantainerView.swift */,
+			);
+			name = "FleaMarket( 小卖部)";
+			path = "FleaMarket( 跳蚤市场)";
+			sourceTree = "<group>";
+		};
+		202138F91E03DC8B00DBDF26 /* SchoolMessage( 校内资讯) */ = {
+			isa = PBXGroup;
+			children = (
+				202138FA1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift */,
+				202138FB1E03DC8B00DBDF26 /* NoticeboardViewController.swift */,
+			);
+			path = "SchoolMessage( 校内资讯)";
+			sourceTree = "<group>";
+		};
+		202138FC1E03DC8B00DBDF26 /* TreeHole(广播站) */ = {
+			isa = PBXGroup;
+			children = (
+				202138FD1E03DC8B00DBDF26 /* RadioStationViewController.swift */,
+				2077D5841E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift */,
+				2077D5851E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib */,
+			);
+			name = "TreeHole(广播站)";
+			path = "TreeHole(树洞)";
+			sourceTree = "<group>";
+		};
+		2077D5CF1E0A614800BCE9E1 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2077D5D01E0A614800BCE9E1 /* SDAutoLayout.h */,
+				2077D5D11E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.h */,
+				2077D5D21E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m */,
+				2077D5D31E0A614800BCE9E1 /* UIView+SDAutoLayout.h */,
+				2077D5D41E0A614800BCE9E1 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
 		36C19C1D4EEF4B283105A4E2 /* Pods */ = {
@@ -398,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20126BD01DF6D28400F5ED74 /* Info.plist in Resources */,
+				2077D5871E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib in Resources */,
 				20126BCF1DF6D28400F5ED74 /* Main.storyboard in Resources */,
 				20126BCD1DF6D28400F5ED74 /* Assets.xcassets in Resources */,
 				20126BCE1DF6D28400F5ED74 /* LaunchScreen.storyboard in Resources */,
@@ -473,24 +537,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E950741DF93586004576BD /* RadioStationViewController.swift in Sources */,
 				20126BDC1DF6DB9200F5ED74 /* MainNavigationViewController.swift in Sources */,
-				20CA63021DFA4FA4002FA30E /* NoticeboardTableViewCell.swift in Sources */,
 				20126BD31DF6D2CB00F5ED74 /* LoginViewController.swift in Sources */,
+				2077D5D61E0A614800BCE9E1 /* UIView+SDAutoLayout.m in Sources */,
 				20126BD11DF6D28400F5ED74 /* ViewController.swift in Sources */,
+				202139001E03DC8B00DBDF26 /* NoticeboardViewController.swift in Sources */,
 				20E9507F1DF96553004576BD /* String_Extension.swift in Sources */,
+				2077D5CB1E0A34AB00BCE9E1 /* TableViewCell.swift in Sources */,
+				20CAE3641E0A165200E0BB42 /* InSchoolViewController.swift in Sources */,
 				20126BCC1DF6D28400F5ED74 /* AppDelegate.swift in Sources */,
 				20126BE01DF6DD1300F5ED74 /* ComplaintsViewController.swift in Sources */,
+				2077D5861E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift in Sources */,
+				2077D5CC1E0A34AB00BCE9E1 /* FriendCircleModel.swift in Sources */,
+				2077D5CE1E0A577F00BCE9E1 /* PhotoCantainerView.swift in Sources */,
 				20126BDA1DF6DB7D00F5ED74 /* MainTabBarViewController.swift in Sources */,
+				202138FE1E03DC8B00DBDF26 /* CanteenViewController.swift in Sources */,
+				2077D5D51E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				20E950811DF96813004576BD /* UILabel_Extension.swift in Sources */,
-				20E950761DF9359B004576BD /* CanteenViewController.swift in Sources */,
-				20126BDE1DF6DD0500F5ED74 /* InSchoolViewController.swift in Sources */,
-				20E950721DF9355C004576BD /* NoticeboardViewController.swift in Sources */,
 				20126BD71DF6D42C00F5ED74 /* Global.swift in Sources */,
 				20126BE21DF6DD1E00F5ED74 /* MyViewController.swift in Sources */,
 				20126BE41DF6DD2C00F5ED74 /* ScheduleViewController.swift in Sources */,
 				20126BE61DF6DD3A00F5ED74 /* WalkStreetViewController.swift in Sources */,
 				20126BD51DF6D2D400F5ED74 /* RegisterViewController.swift in Sources */,
+				202138FF1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift in Sources */,
+				202139011E03DC8B00DBDF26 /* RadioStationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,7 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.ReturnedStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lzc/Desktop/my github project/ReturnedStudent/ReturnedStudent/ReturnedStudent/Others/Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -664,7 +734,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljkj.ReturnedStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lzc/Desktop/my github project/ReturnedStudent/ReturnedStudent/ReturnedStudent/Others/Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

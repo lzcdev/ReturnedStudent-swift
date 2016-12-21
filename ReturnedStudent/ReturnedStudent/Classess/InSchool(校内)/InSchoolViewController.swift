@@ -14,26 +14,43 @@ class InSchoolViewController: UIViewController, UIScrollViewDelegate {
     let topView = UIView()
     let line = UIView()
     let contentView = UIScrollView()
+    var selectedButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.automaticallyAdjustsScrollViewInsets = false
         navigationItem.title = "校内"
+        let dict:NSDictionary = [NSForegroundColorAttributeName: UIColor.colorwith(red: 57, green: 148, blue: 227, alpha: 1),NSFontAttributeName : UIFont.systemFont(ofSize: 17)]
+        //标题颜色
+        self.navigationController?.navigationBar.titleTextAttributes = dict as? [String : AnyObject]
         
         setChildViewControllers()
         
         setTopView()
         
+        setRightBtn()
+        
         setContentView()
         
     }
     
+    // 右上角提醒按钮
+    func setRightBtn() {
+        let item = UIBarButtonItem(image: UIImage(named: "activity_deselect"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(remind))
+        self.navigationItem.rightBarButtonItem = item
+    }
+    
+    func remind() {
+        print("提醒")
+    }
+    
     private func setChildViewControllers() {
         
-        // 公告栏
+        // 校内资讯
         let noticeBoard = NoticeboardViewController()
-        noticeBoard.title = "公告栏"
+        noticeBoard.title = "校内资讯"
         self.addChildViewController(noticeBoard)
         
         // 广播站
@@ -61,29 +78,36 @@ class InSchoolViewController: UIViewController, UIScrollViewDelegate {
         let count = self.childViewControllers.count
         let buttonW = ScreenWith / CGFloat(count)
         
-        line.backgroundColor = UIColor.black
+        line.backgroundColor = UIColor.colorwith(red: 57, green: 148, blue: 227, alpha: 1)
         line.frame.size.height = 2
         line.frame.origin.y = 38;
-        line.frame.size.width = 64;
+        line.frame.size.width = 84;
         
         let smallLine = UIView()
         smallLine.frame = CGRect(x: 0, y: 39, width: ScreenWith, height: 0.5)
         smallLine.backgroundColor = UIColor.lightGray
         topView.addSubview(smallLine)
         
+        selectedButton = UIButton()
+        
         for index in 0 ..< count {
             let button = UIButton(type: .custom)
             button.frame = CGRect(x: CGFloat(index) * buttonW, y: 0, width: buttonW, height: 40)
             let vc = self.childViewControllers[index]
             button.setTitle(vc.title, for: .normal)
-            button.setTitleColor(UIColor.black, for: .normal)
+            button.setTitleColor(UIColor.colorwith(red: 187, green: 192, blue: 197, alpha: 1), for: .normal)
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
             button.tag = index + 1
+            button.isSelected = false
             button.addTarget(self, action: #selector(changeVC(button:)), for: .touchUpInside)
             topView.addSubview(button)
             
             if index == 0 {
                 changeVC(button: button)
                 line.center.x = button.center.x
+                button.isSelected = true
+                button.setTitleColor(UIColor.colorwith(red: 57, green: 148, blue: 227, alpha: 1), for: .normal)
+                selectedButton = button;
                 
             }
             
@@ -97,6 +121,18 @@ class InSchoolViewController: UIViewController, UIScrollViewDelegate {
         UIView.animate(withDuration: 0.25) {
             self.line.center.x = button.center.x
         }
+        
+        if selectedButton == button {
+            return
+        }
+        
+        selectedButton.isSelected = false
+        button.isSelected = true
+        button.setTitleColor(UIColor.colorwith(red: 57, green: 148, blue: 227, alpha: 1), for: .normal)
+        selectedButton.setTitleColor(UIColor.colorwith(red: 187, green: 192, blue: 197, alpha: 1), for: .normal)
+        selectedButton = button
+        
+        
         var point = contentView.contentOffset;
         point.x = CGFloat((button.tag-1)) * contentView.frame.size.width;
         contentView.setContentOffset(point, animated: true)
