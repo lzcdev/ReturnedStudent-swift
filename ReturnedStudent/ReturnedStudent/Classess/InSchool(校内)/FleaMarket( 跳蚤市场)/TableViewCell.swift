@@ -46,8 +46,6 @@ class TableViewCell: UITableViewCell {
     
     var model:FriendCircleModel? {
         didSet {
-            //print("content====\(model?.content)")
-            
             let width = nameLab.zc_autoWidth(text: (model?.name)!, font: 16, height: 20)
             nameLab.frame = CGRect(x: 60, y: 5, width: width, height: 20)
             

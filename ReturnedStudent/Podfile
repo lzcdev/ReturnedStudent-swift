@@ -7,5 +7,6 @@ target 'ReturnedStudent' do
 
 pod 'SnapKit', '~> 3.0.2'
 pod 'MJRefresh', '~> 3.1.12'
+pod 'SDWebImage', '~> 4.0.0-beta2'
 end
    

@@ -12,8 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         setKeyWindow()
@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func setKeyWindow() {
+        
+        QorumLogs.enabled = true           // 开启打印
+        //QorumLogs.minimumLogLevelShown = 4 // 只打印错误
         
         window?.frame = MainBounds
         window?.backgroundColor = UIColor.white

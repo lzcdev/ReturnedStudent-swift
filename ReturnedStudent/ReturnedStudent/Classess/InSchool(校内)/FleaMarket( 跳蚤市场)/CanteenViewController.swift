@@ -38,7 +38,7 @@ class CanteenViewController: UIViewController, UITableViewDelegate, UITableViewD
         universityArray = ["中央民族大学","清华大学","北京大学","浙江大学","复旦大学","北京师范大学","山东大学","中央美术学院","中国传媒学院","上海交通大学"]
         textArray = ["DynamicCocoa，是滴滴 App 架构组自研的 iOS 动态化方案，可以让现有的 Objective-C 代码转换生成中间代码（JS），下发后动态执行。滴滴客户端 App 架构团队表示正在积极准备相关事项，考虑于 2017 年初开源。","使用原生技术栈：使用者完全不用接触到 JS 或任何中间代码，保持原生的 Objective-C 开发、调试方式不变","无需重写已有代码：已有 native 模块能很方便的变成动态化插件","语法支持完备性高：支持绝大多数日常开发中用到的语法，不用担心这不支持那不支持","支持 HotPatch：改完 bug 后直接从源码打出 patch，一站式解决动态化和热修复需求","支持 C 函数的定义与 C 函数的调用、内联函数的调用","支持 C 与 OC 的可变参数方法的调用，如 NSLog","滴滴使用 ruby 开发了一套命令行工具（ 类比为 xcodebuild ），大幅简化了配置开发环境、OC 代码转换、资源处理、打包的复杂度","相比跨端方案，也带来了一个新思路：iOS 和 Android 都保留 native 开发模式，用各自的方式将 native 代码直接动态化，保持各平台的差异性。","DynamicCocoa 动态化技术给 App 开发带来了很大的想象空间"]
         
-        imagesArray = ["about", "about", "about"]
+        imagesArray = ["1.jpg", "1.jpg", "1.jpg"]
         
         for index in 0 ..< textArray.count {
             let model = FriendCircleModel()

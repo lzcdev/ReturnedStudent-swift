@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoCantainerView: UIView {
+class PhotoCantainerView: UIView, SDPhotoBrowserDelegate {
     
     var label: UILabel!
     var imageViewsArray = [UIImageView]()
@@ -16,11 +16,8 @@ class PhotoCantainerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        
         let temp = NSMutableArray()
         for index in 0 ..< 9 {
-            
-            print("\(index)")
             let imageView = UIImageView()
             self.addSubview(imageView)
             imageView.isUserInteractionEnabled = true
@@ -38,7 +35,6 @@ class PhotoCantainerView: UIView {
     
     var picPathStringsArray = [String]() {
         didSet {
-            print("\(picPathStringsArray)")
             
             for index in picPathStringsArray.count ..< imageViewsArray.count {
                 let imageView = imageViewsArray[index]
@@ -67,7 +63,6 @@ class PhotoCantainerView: UIView {
             let perRowItemCount = perRowItemCountForPicPathArray(array: picPathStringsArray)
             
             for (idx,obj) in picPathStringsArray.enumerated() {
-                print("\(index)====\(obj)")
                 let columnIndex = idx % perRowItemCount
                 let rowIndex = idx / perRowItemCount
                 let imageView = imageViewsArray[idx]
@@ -96,10 +91,14 @@ class PhotoCantainerView: UIView {
     }
     
     func tapImageView(tap: UITapGestureRecognizer) -> Void {
-         let imageView = tap.view;
-        print("\(imageView?.tag)")
+        let imageView = tap.view;
+        let browser = SDPhotoBrowser()
+        browser.currentImageIndex = (imageView?.tag)!
+        browser.sourceImagesContainerView = self
+        browser.imageCount = picPathStringsArray.count
+        browser.delegate = self
+        browser.show()
     }
-    
     
     func itemWidthForPicPathArray(array:[String]) -> CGFloat {
         if array.count == 1 {
@@ -118,6 +117,15 @@ class PhotoCantainerView: UIView {
             return 3
         }
     }
+   
+   // MARK: - SDPhotoBrowserDelegate
+    func photoBrowser(_ browser: SDPhotoBrowser!, highQualityImageURLFor index: Int) -> URL! {
+        let imageName = picPathStringsArray[index]
+        return Bundle.main.url(forResource: imageName, withExtension: nil)
+    }
     
-    
+    func photoBrowser(_ browser: SDPhotoBrowser!, placeholderImageFor index: Int) -> UIImage! {
+        let imageView = self.subviews[index] as! UIImageView
+        return imageView.image
+    }
 }

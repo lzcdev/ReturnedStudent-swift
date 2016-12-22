@@ -43,7 +43,7 @@ class InSchoolViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func remind() {
-        print("提醒")
+        QL2("提醒")
     }
     
     private func setChildViewControllers() {

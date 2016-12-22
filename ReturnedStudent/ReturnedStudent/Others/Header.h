@@ -11,7 +11,7 @@
 
 #import "MJRefresh.h"
 #import "SDAutoLayout.h"
-
+#import "SDPhotoBrowser.h"
 
 #endif /* Header_h */
 

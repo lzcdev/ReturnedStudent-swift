@@ -28,6 +28,10 @@
 		202138FF1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FA1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift */; };
 		202139001E03DC8B00DBDF26 /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FB1E03DC8B00DBDF26 /* NoticeboardViewController.swift */; };
 		202139011E03DC8B00DBDF26 /* RadioStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202138FD1E03DC8B00DBDF26 /* RadioStationViewController.swift */; };
+		202EE76C1E0B80FB008EF9E0 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EE7661E0B80FB008EF9E0 /* SDBrowserImageView.m */; };
+		202EE76D1E0B80FB008EF9E0 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EE7681E0B80FB008EF9E0 /* SDPhotoBrowser.m */; };
+		202EE76E1E0B80FB008EF9E0 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EE76B1E0B80FB008EF9E0 /* SDWaitingView.m */; };
+		202EE7701E0BA677008EF9E0 /* QorumLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EE76F1E0BA677008EF9E0 /* QorumLogs.swift */; };
 		2077D5861E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5841E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift */; };
 		2077D5871E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2077D5851E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib */; };
 		2077D5CB1E0A34AB00BCE9E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077D5C91E0A34AB00BCE9E1 /* TableViewCell.swift */; };
@@ -85,6 +89,14 @@
 		202138FA1E03DC8B00DBDF26 /* NoticeboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardTableViewCell.swift; sourceTree = "<group>"; };
 		202138FB1E03DC8B00DBDF26 /* NoticeboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
 		202138FD1E03DC8B00DBDF26 /* RadioStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationViewController.swift; sourceTree = "<group>"; };
+		202EE7651E0B80FB008EF9E0 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		202EE7661E0B80FB008EF9E0 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		202EE7671E0B80FB008EF9E0 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		202EE7681E0B80FB008EF9E0 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		202EE7691E0B80FB008EF9E0 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		202EE76A1E0B80FB008EF9E0 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		202EE76B1E0B80FB008EF9E0 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		202EE76F1E0BA677008EF9E0 /* QorumLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QorumLogs.swift; sourceTree = "<group>"; };
 		2077D5841E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeHoleTableViewCell.swift; sourceTree = "<group>"; };
 		2077D5851E0A22D900BCE9E1 /* TreeHoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeHoleTableViewCell.xib; sourceTree = "<group>"; };
 		2077D5881E0A273900BCE9E1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -247,6 +259,8 @@
 		20126BC21DF6D28400F5ED74 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				202EE76F1E0BA677008EF9E0 /* QorumLogs.swift */,
+				202EE7641E0B80FB008EF9E0 /* SDPhotoBrowser */,
 				2077D5CF1E0A614800BCE9E1 /* SDAutoLayout */,
 				20E9507E1DF96553004576BD /* String_Extension.swift */,
 				20E950801DF96813004576BD /* UILabel_Extension.swift */,
@@ -318,6 +332,20 @@
 			);
 			name = "TreeHole(广播站)";
 			path = "TreeHole(树洞)";
+			sourceTree = "<group>";
+		};
+		202EE7641E0B80FB008EF9E0 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				202EE7651E0B80FB008EF9E0 /* SDBrowserImageView.h */,
+				202EE7661E0B80FB008EF9E0 /* SDBrowserImageView.m */,
+				202EE7671E0B80FB008EF9E0 /* SDPhotoBrowser.h */,
+				202EE7681E0B80FB008EF9E0 /* SDPhotoBrowser.m */,
+				202EE7691E0B80FB008EF9E0 /* SDPhotoBrowserConfig.h */,
+				202EE76A1E0B80FB008EF9E0 /* SDWaitingView.h */,
+				202EE76B1E0B80FB008EF9E0 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		2077D5CF1E0A614800BCE9E1 /* SDAutoLayout */ = {
@@ -541,20 +569,24 @@
 				20126BD31DF6D2CB00F5ED74 /* LoginViewController.swift in Sources */,
 				2077D5D61E0A614800BCE9E1 /* UIView+SDAutoLayout.m in Sources */,
 				20126BD11DF6D28400F5ED74 /* ViewController.swift in Sources */,
+				202EE76C1E0B80FB008EF9E0 /* SDBrowserImageView.m in Sources */,
 				202139001E03DC8B00DBDF26 /* NoticeboardViewController.swift in Sources */,
 				20E9507F1DF96553004576BD /* String_Extension.swift in Sources */,
 				2077D5CB1E0A34AB00BCE9E1 /* TableViewCell.swift in Sources */,
+				202EE76D1E0B80FB008EF9E0 /* SDPhotoBrowser.m in Sources */,
 				20CAE3641E0A165200E0BB42 /* InSchoolViewController.swift in Sources */,
 				20126BCC1DF6D28400F5ED74 /* AppDelegate.swift in Sources */,
 				20126BE01DF6DD1300F5ED74 /* ComplaintsViewController.swift in Sources */,
 				2077D5861E0A22D900BCE9E1 /* TreeHoleTableViewCell.swift in Sources */,
 				2077D5CC1E0A34AB00BCE9E1 /* FriendCircleModel.swift in Sources */,
 				2077D5CE1E0A577F00BCE9E1 /* PhotoCantainerView.swift in Sources */,
+				202EE7701E0BA677008EF9E0 /* QorumLogs.swift in Sources */,
 				20126BDA1DF6DB7D00F5ED74 /* MainTabBarViewController.swift in Sources */,
 				202138FE1E03DC8B00DBDF26 /* CanteenViewController.swift in Sources */,
 				2077D5D51E0A614800BCE9E1 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				20E950811DF96813004576BD /* UILabel_Extension.swift in Sources */,
 				20126BD71DF6D42C00F5ED74 /* Global.swift in Sources */,
+				202EE76E1E0B80FB008EF9E0 /* SDWaitingView.m in Sources */,
 				20126BE21DF6DD1E00F5ED74 /* MyViewController.swift in Sources */,
 				20126BE41DF6DD2C00F5ED74 /* ScheduleViewController.swift in Sources */,
 				20126BE61DF6DD3A00F5ED74 /* WalkStreetViewController.swift in Sources */,
