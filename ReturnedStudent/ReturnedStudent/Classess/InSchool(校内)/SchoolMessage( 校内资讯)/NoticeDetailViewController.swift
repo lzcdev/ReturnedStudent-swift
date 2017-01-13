@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  NoticeDetailViewController.swift
 //  ReturnedStudent
 //
 //  Created by LuzhiChao on 17/1/6.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class NoticeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
