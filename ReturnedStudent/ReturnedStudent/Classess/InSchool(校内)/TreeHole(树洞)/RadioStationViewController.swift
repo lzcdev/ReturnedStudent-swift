@@ -33,19 +33,19 @@ class RadioStationViewController: UIViewController, UITableViewDelegate, UITable
         
         table.register(UINib.init(nibName: "TreeHoleTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
         
-        table.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNew))
-        table.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
-        table.mj_header.beginRefreshing()
+//        table.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNew))
+//        table.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
+//        table.mj_header.beginRefreshing()
         
     }
     
     // 下拉刷新
     @objc private func loadNew() {
-        table.mj_header.endRefreshing()
+ //       table.mj_header.endRefreshing()
     }
     
     @objc private func loadMore() {
-        table.mj_footer.endRefreshing()
+   //     table.mj_footer.endRefreshing()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -1,0 +1,6 @@
+framework module Pods_ReturnedStudentTests {
+  umbrella header "Pods-ReturnedStudentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
